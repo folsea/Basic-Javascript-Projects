@@ -1,14 +1,12 @@
+// basic get the time function
 function get_Date(){
    if (new Date().getHours()<12){
     Greetings = "How are you this morning?";
    }
-   else{
-   Greetings= "How are you this evening";
-}
-    document.getElementById("Greeting").innerHTML=Greeting;
+    document.getElementById("Greeting").innerHTML=Greeting; 
 }
 
-
+// age verifcaiton type thing so kids do not sign up with adult aproval
 function Age_function(){
     Age= document.getElementById("Age").value;
     if (Age<=17){
@@ -20,6 +18,7 @@ function Age_function(){
         document.getElementById("age").innerHTML= sign_up;
 }
 
+//Function based off what time of day it is 
 function Time_function(){
     var Time= new Date().getHours();
     var Reply;
