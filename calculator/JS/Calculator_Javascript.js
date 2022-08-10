@@ -57,12 +57,12 @@ function Handle_Operator(Next_Operator) {
         //If operand ecists property look up is performed for the operator 
         // in the Perform_Calculation object and the function that matches the
         // operator is exexcuted.
-        let result = Perform_Calculaton[operator](Value_Now, Value_of_Input);
+        let result = Perform_Calculation[operator](Value_Now, Value_of_Input);
         //Here we add a ficed amount of number after the decimal.
         result = Number(result).toFixed (9);
         //This will remove any trailing 0's
         result = (result *1).toString();
-        Calculator.Display_Value = paraFloat(result);
+        Calculator.Display_Value = parseFloat(result);
         Calculator.First_Operand = parseFloat(result);
     }
     Calculator.Wait_Second_Operand = true;
